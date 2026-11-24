@@ -100,8 +100,8 @@ export function createArtworkTags() {
 
     source.hidden = !tags.length;
     source.textContent = tags.length ? labels[
-      state.source === 'ON_DEVICE' ? 'onDevice' :
-      state.source === 'IN_CLOUD' ? 'cloud' : 'unknown'
+      state.source === 'on_device' ? 'onDevice' :
+      state.source === 'in_cloud' ? 'cloud' : 'unknown'
     ] : '';
   }
 

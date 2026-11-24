@@ -130,6 +130,9 @@ export function createArtworkTags() {
     } finally {
       pending = null;
       render();
+      if (artwork === currentArt && mode.value === currentMode && panel.closest('dialog').open) {
+        panel.scrollIntoView({ block: 'nearest' });
+      }
     }
   });
 

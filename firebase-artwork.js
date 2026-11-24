@@ -94,5 +94,6 @@ export async function generateArtworkTags(model, mode, artwork, onProgress) {
 
   const image = await artworkPart(artwork.src);
   const { response } = await model.generateContent([prompt, image]);
-  return { tags: parseArtworkTags(response.text()), source: response.inferenceSource };
+  const source = mode === 'local' ? 'ON_DEVICE' : response.inferenceSource;
+  return { tags: parseArtworkTags(response.text()), source };
 }

@@ -2,7 +2,7 @@
 
 Magic Hall is a gallery of fictional memories. Gold candles open paintings, blue candles play music, and each work links to its fictional source conversation.
 
-This edition adds AI catalog tags to the artwork details. Firebase AI Logic prefers Chrome's on-device Gemini Nano, with a Gemini Developer API cloud fallback. Visitors can choose on-device-only inference. The artwork and its public caption are the only catalog data sent to the model. The interface labels each result using the SDK's reported inference source. Results stay in the current page session.
+This edition adds AI catalog tags to the artwork details. Firebase AI Logic prefers Chrome's on-device Gemini Nano, with a Gemini Developer API cloud fallback. Visitors can choose on-device-only inference. The artwork and its public caption are the only catalog data sent to the model. For hybrid requests, the interface labels results with the source reported by the SDK. On-device-only requests explicitly use the SDK's device-only mode. Results stay in the current page session.
 
 ## Run locally
 

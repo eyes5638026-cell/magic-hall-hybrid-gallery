@@ -1,0 +1,92 @@
+.art-dialog #artImage {
+  max-height: min(38dvh, 340px);
+}
+
+.artwork-tags {
+  margin-top: 17px;
+  padding-top: 15px;
+  border-top: 1px solid #f4dfae2b;
+  color: #eadfcb;
+}
+
+.artwork-tags h3 {
+  margin: 0 0 10px;
+  color: #fff1d2;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.tag-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 8px 12px;
+}
+
+.tag-controls label {
+  display: grid;
+  gap: 5px;
+  color: #d6c7af;
+  font-size: 12px;
+}
+
+.tag-controls select,
+.tag-controls button {
+  min-height: 40px;
+  padding: 6px 10px;
+  border: 1px solid #e6c48c65;
+  border-radius: 8px;
+  background: #171e2c;
+  color: #fff1d2;
+  font: inherit;
+  font-size: 13px;
+  color-scheme: dark;
+}
+
+.tag-controls button {
+  background: #eac88d;
+  border-color: #eac88d;
+  color: #271c11;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tag-controls button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.artwork-tags .tag-guidance,
+.artwork-tags .tag-status,
+.artwork-tags .tag-source {
+  margin: 8px 0 0;
+  color: #d8ccb8;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.artwork-tags .tag-status:empty,
+.artwork-tags .tag-results:empty {
+  display: none;
+}
+
+.artwork-tags .tag-source {
+  color: #f6d599;
+}
+
+.tag-results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag-results li {
+  padding: 4px 9px;
+  border: 1px solid #e6c48c55;
+  border-radius: 999px;
+  background: #e6c48c12;
+  font-size: 12px;
+}

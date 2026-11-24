@@ -27,7 +27,7 @@ The Firebase JavaScript SDK is loaded from Google's CDN at version 13.4.0. No pa
 Select GitHub Actions as the Pages source. Set the repository Actions secret
 `FIREBASE_WEB_CONFIGURATION` to the deployment copy of `firebase-config.js`.
 It should contain only the Web SDK's public project identifiers and App Check
-public site key. The workflow adds it to the deployed site during packaging.
+public site key. Run the **Publish the gallery** workflow to package and deploy the configured site.
 
 ## Verify both inference paths
 
